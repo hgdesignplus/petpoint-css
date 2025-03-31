@@ -93,15 +93,15 @@ button.petDetailsActionButton,
 /* 🎨 Styling for Animal Details Popup Window */
 /* =============================== */
 
-/* Page background */
+/* Page background and base font */
 body {
-  background-color: red !important;
+  background-color: #ffffff !important;
   font-family: 'Helvetica Neue', sans-serif !important;
   color: #222 !important;
   padding: 24px !important;
 }
 
-/* Main title ("Meet Adara") */
+/* Main title ("Meet Alfie") */
 h1 {
   font-size: 28px !important;
   color: #49935F !important;
@@ -109,7 +109,7 @@ h1 {
   margin-bottom: 20px !important;
 }
 
-/* Pet image */
+/* Main pet image */
 img {
   border-radius: 12px !important;
   max-width: 100% !important;
@@ -118,39 +118,46 @@ img {
   margin-bottom: 20px !important;
 }
 
-/* Right column text (details like gender, breed, etc.) */
+/* Table styling (right side info) */
+table {
+  width: 100% !important;
+  margin-bottom: 24px !important;
+}
+
+/* Table cells */
 td {
   font-size: 16px !important;
-  padding: 4px 8px !important;
-  line-height: 1.5 !important;
+  padding: 4px 10px !important;
   color: #333 !important;
+  line-height: 1.5 !important;
   vertical-align: top !important;
 }
 
-/* Bold table labels (left column) */
+/* Bold labels on the left side */
 td b {
   color: #49935F !important;
   font-weight: 600 !important;
 }
 
-/* Pet bio paragraph */
+/* Bio paragraph */
 p {
   font-size: 16px !important;
-  line-height: 1.6 !important;
+  line-height: 1.7 !important;
   color: #444 !important;
-  margin-top: 20px !important;
+  margin-top: 24px !important;
 }
 
-/* Link at the bottom (if present) */
-a {
-  color: #F9B372 !important;
+/* Close button */
+a[href*="Close"] {
+  background-color: #F9B372 !important;
+  color: white !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
   font-weight: bold !important;
   text-decoration: none !important;
+  float: right !important;
+  margin-bottom: 20px !important;
 }
-a:hover {
-  text-decoration: underline !important;
-}
-
-body {
-  background-color: red !important;
+a[href*="Close"]:hover {
+  background-color: #e09a5a !important;
 }
