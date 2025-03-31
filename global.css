@@ -119,15 +119,26 @@ td img {
   margin: 0 auto !important;
 }
 
-/* 👁️ Fix layout ONLY in popup table */
-table td:first-child b {
-  font-size: 1px; /* harmless hack to scope this block */
+td b {
+  color: #49935F !important;
+  font-weight: 600 !important;
 }
 
-table td:first-child {
+td img {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Popup-specific layout fix (applies only if first <td> contains image or bold label) */
+td:first-child b {
+  font-size: 1px !important; /* harmless hack to scope this */
+}
+
+td:first-child {
   width: 35% !important;
 }
-table td:last-child {
+
+td:last-child {
   width: 65% !important;
 }
 
