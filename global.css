@@ -131,15 +131,15 @@ td img {
 
 /* Popup-specific layout fix (applies only if first <td> contains image or bold label) */
 td:first-child b {
-  font-size: 1px !important; /* harmless hack to scope this */
+  font-size: 33% !important; /* harmless hack to scope this */
 }
 
 td:first-child {
-  width: 35% !important;
+  width: 33% !important;
 }
 
 td:last-child {
-  width: 65% !important;
+  width: 33% !important;
 }
 
 td {
