@@ -1,18 +1,101 @@
-/* -------------------------- */
-/* 🔒 Remove Branding + Buttons */
-/* -------------------------- */
+/* ======================================= */
+/* 🔒 SECTION 1: Remove PetConnect Branding and Buttons */
+/* ======================================= */
+
 #PetConnectBanner {
   display: none !important;
 }
+
 #DescriptionWrapper #lnkPetAdoption,
 #DescriptionWrapper .petPlaceButton {
   display: none !important;
 }
-/* =============================== */
-/* 🎨 Styling for Animal Details Popup Window */
-/* =============================== */
 
-/* Page background and base font */
+
+/* ======================================= */
+/* 🐾 SECTION 2: Main Listing Grid Styling */
+/* ======================================= */
+
+body {
+  background-color: #ffffff !important;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  color: #222 !important;
+}
+
+.petDetailsTitle,
+#petDetailsTitle {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #49935F !important;
+  text-align: center !important;
+  margin: 12px 0 !important;
+}
+
+.petDetailsImage img,
+#petDetailsImage img {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+#petDetailsContainer,
+.petDetailsContainer {
+  background-color: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 20px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+#petDetailsFooter .petDetailsActionButton,
+button.petDetailsActionButton,
+.petDetailsFooter button {
+  background-color: #49935F !important;
+  color: #ffffff !important;
+  padding: 10px 20px !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-right: 8px !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#petDetailsFooter .petDetailsActionButton:hover {
+  background-color: #3c7c51 !important;
+}
+
+#petDetailsSummary,
+.petDetailsSummary {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+  text-align: left !important;
+}
+
+#petDetailsContent {
+  padding: 0 16px !important;
+}
+
+a {
+  color: #F9B372 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+
+#petDetailsSocial {
+  margin-top: 24px !important;
+}
+
+
+/* ======================================= */
+/* 🪄 SECTION 3: Animal Details Popup Styling */
+/* ======================================= */
+
 body {
   background-color: #ffffff !important;
   font-family: 'Helvetica Neue', sans-serif !important;
@@ -20,7 +103,6 @@ body {
   padding: 24px !important;
 }
 
-/* Main title ("Meet Alfie") */
 h1 {
   font-size: 28px !important;
   color: #49935F !important;
@@ -28,7 +110,6 @@ h1 {
   margin-bottom: 20px !important;
 }
 
-/* Main pet image */
 img {
   border-radius: 12px !important;
   max-width: 100% !important;
@@ -37,13 +118,11 @@ img {
   margin-bottom: 20px !important;
 }
 
-/* Table styling (right side info) */
 table {
   width: 100% !important;
   margin-bottom: 24px !important;
 }
 
-/* Table cells */
 td {
   font-size: 16px !important;
   padding: 4px 10px !important;
@@ -52,13 +131,11 @@ td {
   vertical-align: top !important;
 }
 
-/* Bold labels on the left side */
 td b {
   color: #49935F !important;
   font-weight: 600 !important;
 }
 
-/* Bio paragraph */
 p {
   font-size: 16px !important;
   line-height: 1.7 !important;
@@ -66,7 +143,6 @@ p {
   margin-top: 24px !important;
 }
 
-/* Close button */
 a[href*="Close"] {
   background-color: #F9B372 !important;
   color: white !important;
