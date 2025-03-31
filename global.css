@@ -13,22 +13,10 @@
   display: none !important;
 }
 
-/* Hide "Close This Window" link in popup */
-a[href*="Close"] {
-  display: none !important;
-}
-
 
 /* ======================================= */
 /* 🐾 SECTION 2: Global Styles for Fonts, Links, and Base Layout */
 /* ======================================= */
-
-/* Set base font and body styling */
-body {
-  background-color: #ffffff !important;
-  font-family: 'Helvetica Neue', sans-serif !important;
-  color: #222 !important;
-}
 
 /* Link styling */
 a {
