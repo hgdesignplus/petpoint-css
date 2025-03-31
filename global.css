@@ -1,84 +1,90 @@
-/* ---------------------------------- */
-/* 🔒 Remove PetConnect branding and buttons */
-/* ---------------------------------- */
-
+/* -------------------------- */
+/* 🔒 Remove Branding + Buttons */
+/* -------------------------- */
 #PetConnectBanner {
   display: none !important;
 }
-
 #DescriptionWrapper #lnkPetAdoption,
 #DescriptionWrapper .petPlaceButton {
   display: none !important;
 }
 
-/* ---------------------------------- */
-/* 🎨 HSNT Branded Styling */
-/* ---------------------------------- */
+/* -------------------------- */
+/* 🎨 Branded Modal Styling */
+/* -------------------------- */
 
-/* Modal container */
-div[id*="petDetailsContainer"] {
+/* Modal Container */
+#petDetailsContainer, .petDetailsContainer {
   background-color: #ffffff !important;
-  border-radius: 12px !important;
+  border-radius: 16px !important;
   padding: 24px !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
-  font-family: 'Helvetica Neue', sans-serif !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+  font-family: "Helvetica Neue", sans-serif !important;
   color: #222 !important;
 }
 
-/* Pet image */
-img[id*="petDetailsImage"], .petDetailsImage {
-  border-radius: 10px !important;
-  max-width: 100% !important;
+/* Pet Image */
+#petDetailsImage, .petDetailsImage img {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1) !important;
   margin-bottom: 20px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  width: 100% !important;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
+/* Title (Pet Name) */
+#petDetailsTitle, .petDetailsTitle {
+  font-size: 26px !important;
+  font-weight: bold !important;
   color: #49935F !important;
-  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+  text-align: left !important;
 }
 
-/* Description/body text */
-div[id*="petDetailsSummary"], div[id*="petDetailsContent"] {
+/* Summary or Bio Section */
+#petDetailsSummary, .petDetailsSummary {
   font-size: 16px !important;
   line-height: 1.6 !important;
   color: #333 !important;
+  margin-bottom: 20px !important;
+  text-align: left !important;
 }
 
-/* All links */
-a {
-  color: #49935F !important;
-  text-decoration: none !important;
-  font-weight: bold !important;
-}
-a:hover {
-  color: #3c7c51 !important;
-  text-decoration: underline !important;
-}
-
-/* Footer action buttons */
-.petDetailsActionButton, button[class*="ActionButton"] {
+/* Footer Buttons (like Share, Print, etc.) */
+#petDetailsFooter .petDetailsActionButton,
+button.petDetailsActionButton,
+.petDetailsFooter button {
   background-color: #49935F !important;
-  color: white !important;
-  border: none !important;
+  color: #ffffff !important;
   padding: 10px 20px !important;
+  font-weight: 600 !important;
   border-radius: 6px !important;
-  font-weight: bold !important;
+  border: none !important;
   cursor: pointer !important;
   margin-right: 8px !important;
-  transition: all 0.2s ease-in-out !important;
+  transition: background-color 0.2s ease-in-out;
 }
-button[class*="ActionButton"]:hover {
+
+#petDetailsFooter .petDetailsActionButton:hover {
   background-color: #3c7c51 !important;
 }
 
-/* Social row spacing */
-#petDetailsSocial {
-  margin-top: 24px !important;
+/* Any Links in Modal */
+#petDetailsContainer a,
+.petDetailsContainer a {
+  color: #F9B372 !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+#petDetailsContainer a:hover {
+  text-decoration: underline !important;
 }
 
-/* Clean padding inside modal */
+/* Layout Fix */
 #petDetailsContent {
-  padding: 0 16px !important;
+  padding: 0 12px !important;
+}
+
+/* Extra Cleanup */
+#petDetailsSocial {
+  margin-top: 24px !important;
 }
