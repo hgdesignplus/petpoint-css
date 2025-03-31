@@ -13,9 +13,22 @@
   display: none !important;
 }
 
+/* Hide "Close This Window" link in popup */
+a[href*="Close"] {
+  display: none !important;
+}
+
+
 /* ======================================= */
 /* 🐾 SECTION 2: Global Styles for Fonts, Links, and Base Layout */
 /* ======================================= */
+
+/* Set base font and body styling */
+body {
+  background-color: #ffffff !important;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  color: #222 !important;
+}
 
 /* Link styling */
 a {
@@ -27,44 +40,127 @@ a:hover {
   text-decoration: underline !important;
 }
 
+
 /* ======================================= */
 /* 🐶 SECTION 3: Main Listing Grid & Modal Styles */
 /* ======================================= */
 
+/* Pet name/title in modal */
+#petDetailsTitle,
+.petDetailsTitle {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #49935F !important;
+  text-align: center !important;
+  margin: 12px 0 !important;
+}
 
+/* Pet image inside listing modal */
+#petDetailsImage img,
+.petDetailsImage img {
+  border-radius: 20px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Modal container layout */
+#petDetailsContainer,
+.petDetailsContainer {
+  background-color: #ffffff !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Footer buttons (Share, etc.) */
+#petDetailsFooter .petDetailsActionButton,
+button.petDetailsActionButton,
+.petDetailsFooter button {
+  background-color: #49935F !important;
+  color: #ffffff !important;
+  padding: 10px 20px !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-right: 8px !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#petDetailsFooter .petDetailsActionButton:hover {
+  background-color: #3c7c51 !important;
+}
+
+/* Pet summary text in modal */
+#petDetailsSummary,
+.petDetailsSummary {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+  color: #333 !important;
+  text-align: left !important;
+}
+
+/* Modal content padding */
+#petDetailsContent {
+  padding: 0 16px !important;
+}
+
+/* Social icon row spacing */
+#petDetailsSocial {
+  margin-top: 24px !important;
+}
 
 
 /* ======================================= */
 /* 🪄 SECTION 4: Popup Pet Details Styling (Separate Page) */
 /* ======================================= */
 
-.popup-container h1 {
-  font-size: 60px !important;
+/* Popup pet name title (e.g. "Meet Allie") */
+h1 {
+  font-size: 28px !important;
   color: #49935F !important;
   font-weight: 700 !important;
   margin-bottom: 20px !important;
 }
 
-.popup-container img {
-  border-radius: 999px !important;
+/* Main image in popup */
+img {
+  border-radius: 20px !important;
   max-width: 100% !important;
   height: auto !important;
   margin-bottom: 20px !important;
 }
 
-.popup-container td img {
+/* Center image inside <td> (popup) */
+td img {
   display: block !important;
   margin: 0 auto !important;
 }
 
-.popup-container td b {
-  color: #222222 !important;
+/* Info label text (left column) in popup */
+td b {
+  color: #49935F !important;
   font-weight: 600 !important;
   font-size: 15px !important;
 }
 
+/* Popup layout scope trick */
+td:first-child b {
+  font-size: 1px !important; /* harmless hack to scope next rules to popup only */
+}
+
+/* Adjust column widths in popup detail view */
+td:first-child {
+  width: 35% !important;
+}
+td:last-child {
+  width: 65% !important;
+}
+
 /* Info text cells in popup */
-.popup-container td {
+td {
   font-size: 16px !important;
   padding: 4px 10px !important;
   color: #333 !important;
@@ -73,7 +169,7 @@ a:hover {
 }
 
 /* Description paragraph in popup */
-.popup-container p {
+p {
   font-size: 16px !important;
   line-height: 1.7 !important;
   color: #444 !important;
