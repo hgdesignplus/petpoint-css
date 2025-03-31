@@ -95,7 +95,7 @@ button.petDetailsActionButton,
 
 /* Page background */
 body {
-  background-color: #ffffff !important;
+  background-color: red !important;
   font-family: 'Helvetica Neue', sans-serif !important;
   color: #222 !important;
   padding: 24px !important;
@@ -149,4 +149,8 @@ a {
 }
 a:hover {
   text-decoration: underline !important;
+}
+
+body {
+  background-color: red !important;
 }
