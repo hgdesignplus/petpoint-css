@@ -1,9 +1,7 @@
-/* Hide PetConnect Banner */
 #PetConnectBanner {
   display: none !important;
 }
 
-/* Hide Adoption Buttons */
 #DescriptionWrapper #lnkPetAdoption,
 #DescriptionWrapper .petPlaceButton {
   display: none !important;
