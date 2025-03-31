@@ -13,22 +13,9 @@
   display: none !important;
 }
 
-/* Hide "Close This Window" link in popup */
-a[href*="Close"] {
-  display: none !important;
-}
-
-
 /* ======================================= */
 /* 🐾 SECTION 2: Global Styles for Fonts, Links, and Base Layout */
 /* ======================================= */
-
-/* Set base font and body styling */
-body {
-  background-color: #ffffff !important;
-  font-family: 'Helvetica Neue', sans-serif !important;
-  color: #222 !important;
-}
 
 /* Link styling */
 a {
@@ -40,63 +27,16 @@ a:hover {
   text-decoration: underline !important;
 }
 
-
 /* ======================================= */
 /* 🐶 SECTION 3: Main Listing Grid & Modal Styles */
 /* ======================================= */
 
-/* Pet name/title in modal */
-#petDetailsTitle,
-.petDetailsTitle {
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  color: #49935F !important;
-  text-align: center !important;
-  margin: 12px 0 !important;
-}
 
-/* Pet image inside listing modal */
-#petDetailsImage img,
-.petDetailsImage img {
-  border-radius: 20px !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-/* Modal container layout */
-#petDetailsContainer,
-.petDetailsContainer {
-  background-color: #ffffff !important;
-  border-radius: 20px !important;
-  padding: 20px !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
-}
-
-/* Pet summary text in modal */
-#petDetailsSummary,
-.petDetailsSummary {
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-  margin-bottom: 20px !important;
-  color: #333 !important;
-  text-align: left !important;
-}
-
-/* Modal content padding */
-#petDetailsContent {
-  padding: 0 16px !important;
-}
 
 
 /* ======================================= */
 /* 🪄 SECTION 4: Popup Pet Details Styling (Separate Page) */
 /* ======================================= */
-/* 
-   Note: The following rules are now scoped under .popup-container.
-   Make sure your popup markup has a wrapping element with the class "popup-container"
-   to prevent these styles from affecting other pages.
-*/
 
 .popup-container h1 {
   font-size: 60px !important;
@@ -106,7 +46,7 @@ a:hover {
 }
 
 .popup-container img {
-  border-radius: 20px !important;
+  border-radius: 999px !important;
   max-width: 100% !important;
   height: auto !important;
   margin-bottom: 20px !important;
@@ -118,22 +58,9 @@ a:hover {
 }
 
 .popup-container td b {
-  color: #49935F !important;
+  color: #222222 !important;
   font-weight: 600 !important;
   font-size: 15px !important;
-}
-
-/* Layout hack to scope popup-only adjustments */
-.popup-container td:first-child b {
-  font-size: 33% !important;
-}
-
-/* Adjust column widths in popup detail view */
-.popup-container td:first-child {
-  width: 33% !important;
-}
-.popup-container td:last-child {
-  width: 33% !important;
 }
 
 /* Info text cells in popup */
