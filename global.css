@@ -120,16 +120,14 @@ td img {
   margin: 0 auto !important;
 }
 
-table {
-  width: 100% !important;
-  table-layout: fixed !important;
-  margin-bottom: 24px !important;
+/* 👁️ Fix layout ONLY in popup table */
+table td:first-child b {
+  font-size: 1px; /* harmless hack to scope this block */
 }
 
 table td:first-child {
   width: 35% !important;
 }
-
 table td:last-child {
   width: 65% !important;
 }
