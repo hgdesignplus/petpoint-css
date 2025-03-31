@@ -92,51 +92,52 @@ a:hover {
 /* ======================================= */
 /* 🪄 SECTION 4: Popup Pet Details Styling (Separate Page) */
 /* ======================================= */
+/* 
+   Note: The following rules are now scoped under .popup-container.
+   Make sure your popup markup has a wrapping element with the class "popup-container"
+   to prevent these styles from affecting other pages.
+*/
 
-/* Popup pet name title (e.g. "Meet Allie") */
-h1 {
+.popup-container h1 {
   font-size: 60px !important;
   color: #49935F !important;
   font-weight: 700 !important;
   margin-bottom: 20px !important;
 }
 
-/* Main image in popup */
-img {
+.popup-container img {
   border-radius: 20px !important;
   max-width: 100% !important;
   height: auto !important;
   margin-bottom: 20px !important;
 }
 
-/* Center image inside <td> (popup) */
-td img {
+.popup-container td img {
   display: block !important;
   margin: 0 auto !important;
 }
 
-/* Info label text (left column) in popup */
-td b {
+.popup-container td b {
   color: #49935F !important;
   font-weight: 600 !important;
   font-size: 15px !important;
 }
 
 /* Layout hack to scope popup-only adjustments */
-td:first-child b {
-  font-size: 33% !important; /* harmless way to scope next rules to popup only */
+.popup-container td:first-child b {
+  font-size: 33% !important;
 }
 
 /* Adjust column widths in popup detail view */
-td:first-child {
+.popup-container td:first-child {
   width: 33% !important;
 }
-td:last-child {
+.popup-container td:last-child {
   width: 33% !important;
 }
 
 /* Info text cells in popup */
-td {
+.popup-container td {
   font-size: 16px !important;
   padding: 4px 10px !important;
   color: #333 !important;
@@ -145,7 +146,7 @@ td {
 }
 
 /* Description paragraph in popup */
-p {
+.popup-container p {
   font-size: 16px !important;
   line-height: 1.7 !important;
   color: #444 !important;
