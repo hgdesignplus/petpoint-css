@@ -88,3 +88,65 @@ button.petDetailsActionButton,
 #petDetailsSocial {
   margin-top: 24px !important;
 }
+
+/* =============================== */
+/* 🎨 Styling for Animal Details Popup Window */
+/* =============================== */
+
+/* Page background */
+body {
+  background-color: #ffffff !important;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  color: #222 !important;
+  padding: 24px !important;
+}
+
+/* Main title ("Meet Adara") */
+h1 {
+  font-size: 28px !important;
+  color: #49935F !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+}
+
+/* Pet image */
+img {
+  border-radius: 12px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1) !important;
+  margin-bottom: 20px !important;
+}
+
+/* Right column text (details like gender, breed, etc.) */
+td {
+  font-size: 16px !important;
+  padding: 4px 8px !important;
+  line-height: 1.5 !important;
+  color: #333 !important;
+  vertical-align: top !important;
+}
+
+/* Bold table labels (left column) */
+td b {
+  color: #49935F !important;
+  font-weight: 600 !important;
+}
+
+/* Pet bio paragraph */
+p {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #444 !important;
+  margin-top: 20px !important;
+}
+
+/* Link at the bottom (if present) */
+a {
+  color: #F9B372 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
