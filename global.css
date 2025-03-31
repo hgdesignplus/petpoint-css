@@ -1,31 +1,36 @@
 /* ======================================= */
-/* 🔒 SECTION 1: Remove PetConnect Branding and Buttons */
+/* 🔒 SECTION 1: Remove PetConnect Branding and Unwanted Elements */
 /* ======================================= */
 
+/* Hide PetConnect banner */
 #PetConnectBanner {
   display: none !important;
 }
 
+/* Hide pet adoption buttons */
 #DescriptionWrapper #lnkPetAdoption,
 #DescriptionWrapper .petPlaceButton {
   display: none !important;
 }
 
+/* Hide "Close This Window" link in popup */
 a[href*="Close"] {
   display: none !important;
 }
 
 
 /* ======================================= */
-/* 🐾 SECTION 2: Main Listing Grid Styling */
+/* 🐾 SECTION 2: Global Styles for Fonts, Links, and Base Layout */
 /* ======================================= */
 
+/* Set base font and body styling */
 body {
   background-color: #ffffff !important;
   font-family: 'Helvetica Neue', sans-serif !important;
   color: #222 !important;
 }
 
+/* Link styling */
 a {
   color: #F9B372 !important;
   font-weight: bold !important;
@@ -35,6 +40,12 @@ a:hover {
   text-decoration: underline !important;
 }
 
+
+/* ======================================= */
+/* 🐶 SECTION 3: Main Listing Grid & Modal Styles */
+/* ======================================= */
+
+/* Pet name/title in modal */
 #petDetailsTitle,
 .petDetailsTitle {
   font-size: 22px !important;
@@ -44,6 +55,7 @@ a:hover {
   margin: 12px 0 !important;
 }
 
+/* Pet image inside listing modal */
 #petDetailsImage img,
 .petDetailsImage img {
   border-radius: 20px !important;
@@ -52,6 +64,7 @@ a:hover {
   height: auto !important;
 }
 
+/* Modal container layout */
 #petDetailsContainer,
 .petDetailsContainer {
   background-color: #ffffff !important;
@@ -60,24 +73,7 @@ a:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
-#petDetailsFooter .petDetailsActionButton,
-button.petDetailsActionButton,
-.petDetailsFooter button {
-  background-color: #49935F !important;
-  color: #ffffff !important;
-  padding: 10px 20px !important;
-  font-weight: 600 !important;
-  border-radius: 6px !important;
-  border: none !important;
-  cursor: pointer !important;
-  margin-right: 8px !important;
-  transition: background-color 0.2s ease-in-out;
-}
-
-#petDetailsFooter .petDetailsActionButton:hover {
-  background-color: #3c7c51 !important;
-}
-
+/* Pet summary text in modal */
 #petDetailsSummary,
 .petDetailsSummary {
   font-size: 16px !important;
@@ -87,26 +83,25 @@ button.petDetailsActionButton,
   text-align: left !important;
 }
 
+/* Modal content padding */
 #petDetailsContent {
   padding: 0 16px !important;
 }
 
-#petDetailsSocial {
-  margin-top: 24px !important;
-}
-
 
 /* ======================================= */
-/* 🪄 SECTION 3: Animal Details Popup Styling */
+/* 🪄 SECTION 4: Popup Pet Details Styling (Separate Page) */
 /* ======================================= */
 
+/* Popup pet name title (e.g. "Meet Allie") */
 h1 {
-  font-size: 28px !important;
+  font-size: 60px !important;
   color: #49935F !important;
   font-weight: 700 !important;
   margin-bottom: 20px !important;
 }
 
+/* Main image in popup */
 img {
   border-radius: 20px !important;
   max-width: 100% !important;
@@ -114,34 +109,33 @@ img {
   margin-bottom: 20px !important;
 }
 
+/* Center image inside <td> (popup) */
 td img {
   display: block !important;
   margin: 0 auto !important;
 }
 
+/* Info label text (left column) in popup */
 td b {
   color: #49935F !important;
   font-weight: 600 !important;
+  font-size: 15px !important;
 }
 
-td img {
-  display: block !important;
-  margin: 0 auto !important;
-}
-
-/* Popup-specific layout fix (applies only if first <td> contains image or bold label) */
+/* Layout hack to scope popup-only adjustments */
 td:first-child b {
-  font-size: 33% !important; /* harmless hack to scope this */
+  font-size: 33% !important; /* harmless way to scope next rules to popup only */
 }
 
+/* Adjust column widths in popup detail view */
 td:first-child {
   width: 33% !important;
 }
-
 td:last-child {
   width: 33% !important;
 }
 
+/* Info text cells in popup */
 td {
   font-size: 16px !important;
   padding: 4px 10px !important;
@@ -150,11 +144,7 @@ td {
   vertical-align: top !important;
 }
 
-td b {
-  color: #49935F !important;
-  font-weight: 600 !important;
-}
-
+/* Description paragraph in popup */
 p {
   font-size: 16px !important;
   line-height: 1.7 !important;
