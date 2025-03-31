@@ -11,6 +11,10 @@
   display: none !important;
 }
 
+a[href*="Close"] {
+  display: none !important;
+}
+
 
 /* ======================================= */
 /* 🐾 SECTION 2: Main Listing Grid Styling */
@@ -22,8 +26,17 @@ body {
   color: #222 !important;
 }
 
-.petDetailsTitle,
-#petDetailsTitle {
+a {
+  color: #F9B372 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+
+#petDetailsTitle,
+.petDetailsTitle {
   font-size: 22px !important;
   font-weight: 700 !important;
   color: #49935F !important;
@@ -31,8 +44,8 @@ body {
   margin: 12px 0 !important;
 }
 
-.petDetailsImage img,
-#petDetailsImage img {
+#petDetailsImage img,
+.petDetailsImage img {
   border-radius: 12px !important;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
   max-width: 100% !important;
@@ -78,15 +91,6 @@ button.petDetailsActionButton,
   padding: 0 16px !important;
 }
 
-a {
-  color: #F9B372 !important;
-  font-weight: bold !important;
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: underline !important;
-}
-
 #petDetailsSocial {
   margin-top: 24px !important;
 }
@@ -95,13 +99,6 @@ a:hover {
 /* ======================================= */
 /* 🪄 SECTION 3: Animal Details Popup Styling */
 /* ======================================= */
-
-body {
-  background-color: #ffffff !important;
-  font-family: 'Helvetica Neue', sans-serif !important;
-  color: #222 !important;
-  padding: 24px !important;
-}
 
 h1 {
   font-size: 28px !important;
@@ -118,9 +115,23 @@ img {
   margin-bottom: 20px !important;
 }
 
+td img {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
 table {
   width: 100% !important;
+  table-layout: fixed !important;
   margin-bottom: 24px !important;
+}
+
+table td:first-child {
+  width: 35% !important;
+}
+
+table td:last-child {
+  width: 65% !important;
 }
 
 td {
@@ -136,27 +147,9 @@ td b {
   font-weight: 600 !important;
 }
 
-td img {
-  display: block !important;
-  margin: 0 auto !important;
-}
-
 p {
   font-size: 16px !important;
   line-height: 1.7 !important;
   color: #444 !important;
   margin-top: 24px !important;
-}
-
-table {
-  table-layout: fixed !important;
-  width: 100% !important;
-}
-
-table td:first-child {
-  width: 35% !important;  /* Makes left column take more space */
-}
-
-table td:last-child {
-  width: 65% !important;  /* Remaining space for right column */
 }
