@@ -42,9 +42,14 @@ a:hover {
 .list-table {}
 
 .list-item {
-	width: auto;
-	text-align: center;
-	vertical-align: top;	
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: inline-block;
+  vertical-align: top;
 }
 
 .list-animal-photo-block {}
