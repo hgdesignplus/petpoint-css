@@ -38,7 +38,7 @@ a:hover {
 .petDetailsTitle {
   font-size: 22px !important;
   font-weight: 700 !important;
-  color: #49935F !important;
+  color: #ffffff !important;
   text-align: center !important;
   margin: 12px 0 !important;
 }
@@ -95,10 +95,25 @@ button.petDetailsActionButton,
   padding: 0 16px !important;
 }
 
-/* Social icon row spacing */
-#petDetailsSocial {
-  margin-top: 24px !important;
+/* 🐾 Pet listing cards - uniform height fix */
+.petDetailsImage,
+#petDetailsImage {
+  height: 250px !important;         /* Set a consistent height */
+  overflow: hidden !important;      /* Hide overflow */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
+
+.petDetailsImage img,
+#petDetailsImage img {
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+}
+
 
 
 /* ======================================= */
