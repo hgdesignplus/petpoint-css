@@ -13,7 +13,6 @@
   display: none !important;
 }
 
-
 /* ======================================= */
 /* 🐾 SECTION 2: Global Styles for Fonts, Links, and Base Layout */
 /* ======================================= */
@@ -28,12 +27,12 @@ a:hover {
   text-decoration: underline !important;
 }
 
-
 /* ======================================= */
 /* 🐶 SECTION 3: Main Listing Grid & Modal Styles */
 /* ======================================= */
 
 /* Pet name/title in modal */
+/*
 #petDetailsTitle,
 .petDetailsTitle {
   font-size: 22px !important;
@@ -44,6 +43,7 @@ a:hover {
 }
 
 /* Pet image inside listing modal */
+/*
 #petDetailsImage img,
 .petDetailsImage img {
   border-radius: 20px !important;
@@ -53,6 +53,7 @@ a:hover {
 }
 
 /* Modal container layout */
+/*
 #petDetailsContainer,
 .petDetailsContainer {
   background-color: #ffffff !important;
@@ -62,6 +63,7 @@ a:hover {
 }
 
 /* Footer buttons (Share, etc.) */
+/*
 #petDetailsFooter .petDetailsActionButton,
 button.petDetailsActionButton,
 .petDetailsFooter button {
@@ -81,6 +83,7 @@ button.petDetailsActionButton,
 }
 
 /* Pet summary text in modal */
+/*
 #petDetailsSummary,
 .petDetailsSummary {
   font-size: 16px !important;
@@ -91,36 +94,17 @@ button.petDetailsActionButton,
 }
 
 /* Modal content padding */
+/*
 #petDetailsContent {
   padding: 0 16px !important;
 }
-
-/* 🐾 Pet listing cards - uniform height fix */
-.petDetailsImage,
-#petDetailsImage {
-  height: 250px !important;         /* Set a consistent height */
-  overflow: hidden !important;      /* Hide overflow */
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.petDetailsImage img,
-#petDetailsImage img {
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: cover !important;
-  border-radius: 12px !important;
-}
-
-
 
 /* ======================================= */
 /* 🪄 SECTION 4: Popup Pet Details Styling (Separate Page) */
 /* ======================================= */
 
 /* Popup pet name title (e.g. "Meet Allie") */
+/*
 h1 {
   font-size: 28px !important;
   color: #49935F !important;
@@ -129,6 +113,7 @@ h1 {
 }
 
 /* Main image in popup */
+/*
 img {
   border-radius: 20px !important;
   max-width: 100% !important;
@@ -137,12 +122,14 @@ img {
 }
 
 /* Center image inside <td> (popup) */
+/*
 td img {
   display: block !important;
   margin: 0 auto !important;
 }
 
 /* Info label text (left column) in popup */
+/*
 td b {
   color: #49935F !important;
   font-weight: 600 !important;
@@ -150,11 +137,13 @@ td b {
 }
 
 /* Popup layout scope trick */
+/*
 td:first-child b {
   font-size: 1px !important; /* harmless hack to scope next rules to popup only */
 }
 
 /* Adjust column widths in popup detail view */
+/*
 td:first-child {
   width: 35% !important;
 }
@@ -163,6 +152,7 @@ td:last-child {
 }
 
 /* Info text cells in popup */
+/*
 td {
   font-size: 16px !important;
   padding: 4px 10px !important;
@@ -172,9 +162,11 @@ td {
 }
 
 /* Description paragraph in popup */
+/*
 p {
   font-size: 16px !important;
   line-height: 1.7 !important;
   color: #444 !important;
   margin-top: 24px !important;
 }
+*/
